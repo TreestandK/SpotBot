@@ -31,7 +31,8 @@
 ## Step 3: Create Spotify playlist
 	- Create new Spotify playlist that will be used for channel
 	- Click the 3 dots and click "Invite collaborators"
-	- Use the link generated from this for the next step, this will be what the bot uses to be able to add to the playlist
+	- Use the link generated from this for the next step, this will be what the bot uses 
+    to be able to add to the playlist
 
 ## Step 4: Running the bot
 	- Install Python on PC
