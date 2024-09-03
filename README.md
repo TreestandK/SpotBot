@@ -23,7 +23,7 @@
 	- Go to the bot tab
 	- Press "reset access token"
 	- Copy token to notepad so you dont lose it
-	- Check the buttons for "Presence Intent", "Server Members Intent", "Message Content Intent"
+	- Check the buttons for "Message Content Intent"
 	- Give bot permissions for Send Messages, Embed Links
 	- Click "Installation"
 	- Copy link from "Install Link" and invite to server
