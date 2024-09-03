@@ -96,6 +96,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
+    # YouTube links
     youtube_url_pattern = re.compile(r'https?://(?:www\.)?youtube\.com/watch\?v=[\w-]+')
     match_youtube = youtube_url_pattern.search(message.content)
     if match_youtube:
@@ -131,7 +132,7 @@ async def on_message(message):
         else:
             await message.channel.send("Could not extract or parse track and artist info from the YouTube title or uploader.")
 
-    # Handle Spotify links
+    # Spotify links
     spotify_url_pattern = re.compile(r'https?://open\.spotify\.com/track/([a-zA-Z0-9]+)')
     match_spotify = spotify_url_pattern.search(message.content)
     if match_spotify:
@@ -140,7 +141,7 @@ async def on_message(message):
         track_name = track_info['name']
         artist_name = track_info['artists'][0]['name']  # Assuming the first artist is the main one
         track_uri = track_info['uri']
-        album_art_url = track_info['album']['images'][0]['url']  # Fetch album art (usually there are multiple sizes, pick the first one)
+        album_art_url = track_info['album']['images'][0]['url']  # Fetch album art
 
         # Add the track to the playlist
         sp.playlist_add_items(SPOTIFY_PLAYLIST_ID, [track_uri])
@@ -150,7 +151,7 @@ async def on_message(message):
             title=f"{track_name}",
             description=f"by {artist_name}",
             url=match_spotify.group(0),
-            color=discord.Color.green()  # Spotify green
+            color=discord.Color.green()
         )
         embed.set_thumbnail(url=album_art_url)
         embed.add_field(name="Added to Playlist", value="Success!", inline=True)
