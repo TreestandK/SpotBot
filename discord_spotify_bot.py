@@ -3,7 +3,7 @@ from discord.ext import commands
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import re
-import yt_dlp as youtube_dl  # Using yt_dlp as a replacement for youtube_dl
+import yt_dlp as youtube_dl
 
 # Spotify API credentials
 SPOTIPY_CLIENT_ID = 'Client ID from Spotify Dev'
