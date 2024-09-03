@@ -6,7 +6,6 @@
 	- Click "Create App"
 	- Create app name, app description, and set "Redirect URIs" to
 		- http://localhost:8888/callback
-    		- http://localhost:8888/callback/
 	- Check all API/SDK
 	- Check "I understand"
 	- Click "Save
