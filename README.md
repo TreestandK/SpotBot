@@ -1,4 +1,6 @@
-Step 1: Sign up for Spotify Dev account
+# Instruction for SpotBot
+
+## Step 1: Sign up for Spotify Dev account
 	- Go to https://developer.spotify.com/dashboard/
 	- Press Login
 	- Click "Create App"
@@ -15,7 +17,7 @@ Step 1: Sign up for Spotify Dev account
 	- Check "I understand"
 	- Click "Save
 
-Step 2: Create Discord bot
+## Step 2: Create Discord bot
 	- Go to https://discord.com/developers/
 	- Create a new application
 	- Go to the bot tab
@@ -26,12 +28,12 @@ Step 2: Create Discord bot
 	- Click "Installation"
 	- Copy link from "Install Link" and invite to server
 
-Step 3: Create Spotify playlist
+## Step 3: Create Spotify playlist
 	- Create new Spotify playlist that will be used for channel
 	- Click the 3 dots and click "Invite collaborators"
 	- Use the link generated from this for the next step, this will be what the bot uses to be able to add to the playlist
 
-Step 4: Running the bot
+## Step 4: Running the bot
 	- Install Python on PC
 		- Go to https://www.python.org/downloads/windows/
 		- Click Download Windows installer (64-bit)
